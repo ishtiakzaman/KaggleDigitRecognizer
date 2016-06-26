@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( digit_recognizer )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( digit_recognizer digit_recognizer.cpp )
+target_link_libraries( digit_recognizer ${OpenCV_LIBS} )
